@@ -1,18 +1,21 @@
-/*------c programmming-----
+/*---------c programmming----------
 FILE NAME   :samping_signals.c
 DESCRIPTION : C program to detect the type of trigger signal for the given sample sequence
 CREATED BY  : Sandhiya P
 EMPLOYEE ID : 213385
---------------------------*/
+---------------------------------*/
 
-/*--------INCLUDES-----------*/
+/*----------INCLUDES------------*/
 #include <stdio.h>
 #include <stdlib.h>
-/*------MAIN FUNCTION---------*/
+---------------------------------*/
+/*--------GLOBAL VARIABLES-------*/
+int a[50],i,n;
+int c1=0,c2=0,c3=0;
+---------------------------------*/
+/*------MAIN FUNCTION------------*/
 int main()
 {
-   int a[50],i,n;
-   int c1=0,c2=0,c3=0;
    printf("detecting level,raising and falling edge\n");
    printf("Enter the no. of samples\n");
    scanf("%d",&n);
@@ -43,3 +46,4 @@ int main()
    printf("No. of levels : %d\nNo. of falling edge : %d\nNo. of rising edge : %d",c1,c2,c3);
 
 }
+/*-----------END OF FILE-------------*/
