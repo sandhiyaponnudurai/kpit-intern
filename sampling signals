@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a[50],i,n;
+   int c1=0,c2=0,c3=0;
+   printf("detecting level,raising and falling edge\n");
+   printf("Enter the no. of samples\n");
+   scanf("%d",&n);
+   printf("no. of samples : %d\n",n);
+   printf("enter the samples\n");
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   for(i=0;i<n-1;i++)
+   {
+       if(a[i]==a[i+1])
+       {
+           printf("sample no. %d|| voltage level : %d|| level edge\n",i,a[i]);
+           c1++;
+       }
+       else if(a[i]>a[i+1])
+       {
+           printf("sample no. %d|| voltage level : %d|| falling edge\n",i,a[i]);
+           c2++;
+       }
+       else if(a[i]<a[i+1])
+       {
+           printf("sample no. %d|| voltage level : %d|| rising edge\n",i,a[i]);
+           c3++;
+       }
+   }
+   printf("No. of levels : %d\nNo. of falling edge : %d\nNo. of rising edge : %d",c1,c2,c3);
+
+}
