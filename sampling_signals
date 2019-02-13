@@ -1,6 +1,14 @@
+/*------c programmming-----
+FILE NAME   :samping_signals.c
+DESCRIPTION : C program to detect the type of trigger signal for the given sample sequence
+CREATED BY  : Sandhiya P
+EMPLOYEE ID : 213385
+--------------------------*/
+
+/*--------INCLUDES-----------*/
 #include <stdio.h>
 #include <stdlib.h>
-
+/*------MAIN FUNCTION---------*/
 int main()
 {
    int a[50],i,n;
