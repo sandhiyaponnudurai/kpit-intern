@@ -5,5 +5,5 @@ language: c
  - clang
  - gcc 8
  script:
- - gcc -o test sampling_signals.c // we can use gcc instead of clang too
+ - gcc -o sampling_signals sampling_signals.c // we can use gcc instead of clang too
  - ./sampling_signals
