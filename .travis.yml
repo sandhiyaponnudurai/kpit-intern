@@ -3,7 +3,7 @@ language: c
  compiler: 
 
  - clang
- - gcc
+ - gcc 8
  script:
- - gcc -o test test.c // we can use gcc instead of clang too
+ - gcc -o test sampling_signals.c // we can use gcc instead of clang too
  - ./sampling_signals
